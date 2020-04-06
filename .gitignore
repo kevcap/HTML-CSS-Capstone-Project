@@ -1,4 +1,6 @@
 *.sass
+*.scss
 *.map
-.json
+*.json
 bootstrap.min.js
+node_modules
