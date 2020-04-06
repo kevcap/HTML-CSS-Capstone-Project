@@ -1,3 +1,12 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #2d3033;
+}
+
 header {
   height: 60px;
   padding: 10px;
@@ -13,6 +22,7 @@ header {
           align-items: center;
 }
 
+/* WORKING ON HEADER */
 .logo svg {
   height: 40px;
 }
@@ -65,5 +75,47 @@ button svg {
   fill: #414141;
   height: 50%;
   display: block;
+}
+
+/* WORKING ON CAROUSEL1 */
+.carousel1 .carousel-item {
+  height: 230px;
+}
+
+.carousel1 .carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 27%;
+     object-position: 50% 27%;
+}
+
+/* WORKING ON COURSES SECTION */
+.section-course {
+  padding-top: 40px;
+}
+
+.section-course .carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-title {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("https://www.alura.com.br/assets/api/cursos/introducao-html-css.svg");
+  margin: 0 10px;
 }
 /*# sourceMappingURL=styles.css.map */
