@@ -9,12 +9,50 @@
   src: url("../fonts/Gotham-Light.otf") format("woff2"), url("../fonts/GothamLight.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "HelvNeue";
+  src: url("../fonts/helvetica-neue.ttf") format("truetype");
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(240%);
+            transform: translateY(240%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(240%);
+            transform: translateY(240%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 :root {
   font-size: 13px;
 }
 
+header, .first-section, .first-section-left, .search-content, .categories, .categorie, .hot-promo, .trending,
+.suggestion, .course-box .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .categorie, .course-box, main > form .search {
   border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.first-section h1, .search-content, .categorie-svg, .hot-ads, .hot-promo-video-n-text, .course-box img, .add-to-cart {
+  width: 100%;
 }
 
 .star {
@@ -40,6 +78,12 @@ h3 {
   font-family: "Gotham bold", Arial, Helvetica, sans-serif;
 }
 
+h4,
+h5,
+h6 {
+  font-family: "HelvNeue", 'Times New Roman', Times, serif;
+}
+
 body {
   background-color: #f9fbfd;
 }
@@ -48,9 +92,6 @@ header {
   height: 60px;
   padding: 10px 20px;
   background-color: #d35266;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -75,7 +116,6 @@ header .logo {
 header .login {
   border: none;
   border-radius: 10px;
-  margin-left: auto;
 }
 
 /* WORKING ON HEADER */
@@ -95,9 +135,6 @@ header .login {
 /* WORKING ON FIRST SECTION */
 .first-section {
   padding: 20px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -115,7 +152,6 @@ header .login {
 
 .first-section h1 {
   font-size: 1.5rem;
-  width: 100%;
 }
 
 .first-section h3 {
@@ -131,7 +167,7 @@ header .login {
   right: -101px;
 }
 
-.first-section .clouds {
+.clouds {
   background: url("https://svgsilh.com/svg/1295100.svg") no-repeat;
   background-size: auto;
   display: block;
@@ -140,16 +176,15 @@ header .login {
   height: 200px;
   z-index: -1;
   background-size: contain;
-  top: 1px;
+  top: -20px;
   right: -67px;
   z-index: 0;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
+          animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 .first-section-left {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -160,6 +195,8 @@ header .login {
 }
 
 .first-section-left h1 {
+  width: -webkit-fit-content;
+  width: fit-content;
   width: -moz-fit-content;
 }
 
@@ -179,10 +216,6 @@ header .login {
 /* WORKING ON SEARCH */
 .search-content {
   height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -246,9 +279,6 @@ header .login {
 
 /* WORKING ON CATEGORIE */
 .categories {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 40px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -271,9 +301,11 @@ section > .show-all {
 }
 
 .show-all {
+  width: -webkit-fit-content;
+  width: fit-content;
   width: -moz-fit-content;
   text-align: end;
-  margin-left: auto !important;
+  margin-left: auto;
 }
 
 .categorie-anchor {
@@ -283,9 +315,6 @@ section > .show-all {
 .categorie {
   margin: 10px 5px;
   width: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -315,13 +344,8 @@ section > .show-all {
           transform: scale(1.1);
 }
 
-.categorie-svg {
-  width: 100%;
-}
-
 /* WORKING ON HOT ADS SECTION */
 .hot-ads {
-  width: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -362,6 +386,8 @@ section > .show-all {
 }
 
 .hot-ads .hot-promo-text h5 {
+  width: -webkit-fit-content;
+  width: fit-content;
   width: -moz-fit-content;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -404,9 +430,6 @@ section > .show-all {
 }
 
 .hot-promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -416,7 +439,6 @@ section > .show-all {
 }
 
 .hot-promo-video-n-text {
-  width: 100%;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -444,9 +466,6 @@ section > .show-all {
 /* TRENDING SECTION */
 .trending,
 .suggestion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -455,15 +474,9 @@ section > .show-all {
   padding-top: 40px;
 }
 
-.section-course .carousel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .course-box {
   margin: 2%;
-  max-width: none;
+  max-width: 73%;
   min-width: 260px;
   background-color: #fff;
   border-radius: 10px;
@@ -477,9 +490,6 @@ section > .show-all {
 
 .course-box .text {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -493,7 +503,6 @@ section > .show-all {
 .course-box img {
   height: 170px;
   border-radius: 10px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -540,7 +549,6 @@ section > .show-all {
   margin-bottom: 10px;
   border: none;
   border-radius: 4px;
-  width: 100%;
   text-transform: capitalize;
   background-color: #d35266;
   color: white;
@@ -613,9 +621,6 @@ main > form .search {
 }
 
 @media (min-width: 980px) {
-  .container {
-    min-width: 100% !important;
-  }
   .hot-promo-text {
     margin-top: 20px;
     -ms-flex-pack: distribute;
