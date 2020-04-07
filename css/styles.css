@@ -156,6 +156,7 @@ header .login {
 
 .search:focus {
   width: 80%;
+  outline: none;
 }
 
 .search-button {
