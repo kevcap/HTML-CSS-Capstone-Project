@@ -10,10 +10,10 @@
 }
 
 :root {
-  font-size: 16px;
+  font-size: 13px;
 }
 
-.categorie, .course-box {
+.categorie, .course-box, main > form .search {
   border: 1px solid rgba(0, 0, 0, 0.075);
 }
 
@@ -113,6 +113,15 @@ header .login {
   overflow: hidden;
 }
 
+.first-section h1 {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.first-section h3 {
+  font-size: 0.9rem;
+}
+
 .first-section .logo a {
   width: 200px;
   height: 200px;
@@ -138,7 +147,33 @@ header .login {
 
 .first-section-left {
   width: 40%;
-  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section-left h1 {
+  width: -moz-fit-content;
+}
+
+.first-section-left .search-content {
+  max-width: 300px;
+}
+
+.first-section-left .logo, .first-section-left .logo a {
+  width: 50px;
+  height: 50px;
+}
+
+.first-section-left .logo a {
+  position: unset;
 }
 
 /* WORKING ON SEARCH */
@@ -148,6 +183,7 @@ header .login {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: 0 auto;
 }
 
 .search {
@@ -158,6 +194,7 @@ header .login {
   width: 57%;
   -webkit-transition: width ease-in 400ms;
   transition: width ease-in 400ms;
+  margin-left: auto;
 }
 
 .search::-webkit-input-placeholder {
@@ -189,6 +226,7 @@ header .login {
   border-bottom-right-radius: 10px;
   -webkit-transition: background 200ms linear;
   transition: background 200ms linear;
+  margin-right: auto;
 }
 
 .search-button:focus {
@@ -289,9 +327,13 @@ section > .show-all {
   border-radius: 10px;
 }
 
+.hot-ads .video-text h6 {
+  display: none;
+}
+
 .hot-ads .hot-promo-vid {
   display: block;
-  max-height: 300px;
+  max-height: 350px;
   background-size: cover;
   border-radius: 4px;
 }
@@ -320,6 +362,7 @@ section > .show-all {
 }
 
 .hot-ads .hot-promo-text h5 {
+  width: -moz-fit-content;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -328,7 +371,6 @@ section > .show-all {
   margin-bottom: 15px;
 }
 
-.hot-ads .hot-promo-text h5,
 .hot-ads .hot-promo-text .course-price,
 .hot-ads .hot-promo-text .course-star,
 .hot-ads .hot-promo-text .big-button {
@@ -376,6 +418,7 @@ section > .show-all {
 .hot-promo-video-n-text {
   width: 100%;
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .hot-promo-features {
@@ -529,18 +572,34 @@ footer ul li {
   padding: 10px;
 }
 
+main > form .search {
+  max-width: 600px;
+}
+
 @media (min-width: 480px) {
   :root {
     font-size: 13px;
   }
+  header {
+    font-size: 1.2rem;
+  }
+  .first-section-left h1 {
+    font-size: 2.9rem;
+  }
+  .first-section-left h3 {
+    font-size: 1.6rem;
+  }
   .hot-ads .video-text h6 {
-    display: none;
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
   .course-box {
     max-width: 40%;
+  }
+  .first-section-left .search-content {
+    max-width: 500px;
   }
 }
 
@@ -581,6 +640,9 @@ footer ul li {
 @media (min-width: 1200px) {
   :root {
     font-size: 16px;
+  }
+  header {
+    font-size: 1rem;
   }
   .lp-hide {
     display: none;
