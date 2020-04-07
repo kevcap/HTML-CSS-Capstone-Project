@@ -50,6 +50,12 @@ header .logo {
   margin-left: 5px;
 }
 
+header .login {
+  border: none;
+  border-radius: 10px;
+  margin-left: 70%;
+}
+
 /* WORKING ON HEADER */
 .logo a {
   height: 40px;
@@ -59,7 +65,7 @@ header .logo {
   background-size: contain;
 }
 
-.carrinho svg {
+.cart-list svg {
   height: 30px;
   fill: white;
 }
@@ -295,12 +301,37 @@ section > .show-all {
   margin-bottom: 15px;
 }
 
+.hot-ads .course-star {
+  margin: 40px 0 10px 0;
+}
+
+.hot-ads .course-price {
+  font-size: 20px;
+}
+
+.hot-ads .big-button {
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background-color: #63a4ff;
+  border-radius: 10px;
+  padding: 3px;
+  -webkit-transition: background-color linear 300ms;
+  transition: background-color linear 300ms;
+}
+
+.hot-ads .big-button:hover {
+  background-color: #3b81e2;
+}
+
 .hot-promo-features {
   font-size: 12px;
 }
 
 .hot-promo-features h6 + h6 {
   margin-left: 10px;
+  border-left: 1px solid black;
+  padding-left: 10px;
 }
 
 .hot-promo-features h6 {
@@ -308,7 +339,8 @@ section > .show-all {
 }
 
 /* TRENDING SECTION */
-.trending {
+.trending,
+.suggestion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,6 +367,8 @@ section > .show-all {
   background-color: #fff;
   border-radius: 5px;
   padding: 10px;
+  -webkit-transition: background-color ease-in 100ms;
+  transition: background-color ease-in 100ms;
 }
 
 .course-box .text {
@@ -364,6 +398,10 @@ section > .show-all {
   cursor: pointer;
 }
 
+.course-box:hover {
+  background-color: #fafafa;
+}
+
 .course-title h4 {
   font-size: 18px;
 }
@@ -390,6 +428,7 @@ section > .show-all {
 }
 
 .add-to-cart {
+  margin-top: 10px;
   border: none;
   border-radius: 4px;
   width: 100%;
