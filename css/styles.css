@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Gotham bold';
+  src: url("../fonts/Gotham-Bold.otf"), url("../fonts/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham light";
+  src: url("../fonts/Gotham-Light.otf") format("woff2"), url("../fonts/GothamLight.ttf") format("truetype");
+}
+
 .categorie, .course-box {
   border: 1px solid rgba(0, 0, 0, 0.075);
 }
@@ -16,6 +26,14 @@
 html,
 body {
   height: 100%;
+  color: #383838;
+  font-family: "Gotham light", 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gotham bold", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -25,7 +43,7 @@ body {
 header {
   height: 60px;
   padding: 10px 20px;
-  background-color: #14152b;
+  background-color: #d35266;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +332,7 @@ section > .show-all {
   margin-top: 10px;
   border: none;
   color: white;
-  background-color: #63a4ff;
+  background-color: #d35266;
   border-radius: 10px;
   padding: 3px;
   -webkit-transition: background-color linear 300ms;
@@ -322,7 +340,7 @@ section > .show-all {
 }
 
 .hot-ads .big-button:hover {
-  background-color: #3b81e2;
+  background-color: #c02940;
 }
 
 .hot-promo-features {
@@ -425,7 +443,7 @@ section > .show-all {
 }
 
 .course-price strike {
-  color: grey;
+  color: #888;
 }
 
 .add-to-cart {
@@ -434,9 +452,11 @@ section > .show-all {
   border-radius: 4px;
   width: 100%;
   text-transform: capitalize;
+  background-color: #d35266;
+  color: white;
 }
 
 .add-to-cart:hover {
-  background: #d7d8d8;
+  background-color: #c02940;
 }
 /*# sourceMappingURL=styles.css.map */
