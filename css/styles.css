@@ -9,6 +9,10 @@
   src: url("../fonts/Gotham-Light.otf") format("woff2"), url("../fonts/GothamLight.ttf") format("truetype");
 }
 
+:root {
+  font-size: 16px;
+}
+
 .categorie, .course-box {
   border: 1px solid rgba(0, 0, 0, 0.075);
 }
@@ -71,7 +75,7 @@ header .logo {
 header .login {
   border: none;
   border-radius: 10px;
-  margin-left: 70%;
+  margin-left: auto;
 }
 
 /* WORKING ON HEADER */
@@ -212,26 +216,34 @@ header .login {
       flex-wrap: wrap;
 }
 
+.categories div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .categories a:hover:not(.show-all) {
   text-decoration: none;
 }
 
 section > h4,
 section > .show-all {
-  width: 50%;
+  width: 48%;
   color: #383838;
   margin-bottom: 15px;
 }
 
 .show-all {
+  width: -moz-fit-content;
   text-align: end;
+  margin-left: auto !important;
 }
 
-.categories a + a {
-  margin-left: 15px;
+.categorie-anchor {
+  margin: 5px;
 }
 
 .categorie {
+  margin: 10px 5px;
   width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +268,7 @@ section > .show-all {
   width: -webkit-fit-content;
   width: fit-content;
   width: -moz-fit-content;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 10px;
 }
 
@@ -277,19 +289,9 @@ section > .show-all {
   border-radius: 10px;
 }
 
-.hot-ads .hot-promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.hot-ads .hot-promo-img {
+.hot-ads .hot-promo-vid {
   display: block;
-  height: 300px;
+  max-height: 300px;
   background-size: cover;
   border-radius: 4px;
 }
@@ -302,22 +304,38 @@ section > .show-all {
           transform: translateX(-50%);
   text-align: center;
   width: 400px;
+  width: -webkit-fit-content;
+  width: fit-content;
+  width: -moz-fit-content;
 }
 
 .hot-ads .video-text h4 {
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-bottom: 20px;
 }
 
 .hot-ads .hot-promo-text {
-  margin-left: 30px;
   width: 50%;
+  margin-top: 20px;
 }
 
 .hot-ads .hot-promo-text h5 {
-  font-size: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
   text-align: justify;
   margin-bottom: 15px;
+}
+
+.hot-ads .hot-promo-text h5,
+.hot-ads .hot-promo-text .course-price,
+.hot-ads .hot-promo-text .course-star,
+.hot-ads .hot-promo-text .big-button {
+  width: 65%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .hot-ads .course-star {
@@ -325,7 +343,7 @@ section > .show-all {
 }
 
 .hot-ads .course-price {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .hot-ads .big-button {
@@ -343,8 +361,31 @@ section > .show-all {
   background-color: #c02940;
 }
 
+.hot-promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hot-promo-video-n-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .hot-promo-features {
-  font-size: 12px;
+  width: -webkit-fit-content;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 0.75rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .hot-promo-features h6 + h6 {
@@ -365,8 +406,6 @@ section > .show-all {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .section-course {
@@ -380,12 +419,15 @@ section > .show-all {
 }
 
 .course-box {
-  margin: 5px;
-  max-width: 20%;
+  margin: 2%;
+  max-width: none;
   min-width: 260px;
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   -webkit-transition: background-color ease-in 100ms;
   transition: background-color ease-in 100ms;
 }
@@ -422,12 +464,12 @@ section > .show-all {
 }
 
 .course-title h4 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .course-star {
   display: block;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .course-star svg {
@@ -452,6 +494,7 @@ section > .show-all {
 
 .add-to-cart {
   margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 4px;
   width: 100%;
@@ -484,5 +527,94 @@ footer ul {
 footer ul li {
   list-style-type: none;
   padding: 10px;
+}
+
+@media (min-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  .hot-ads .video-text h6 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-box {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 980px) {
+  .course-box {
+    max-width: 20%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 400px;
+            flex: 1 1 400px;
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+    min-width: 100% !important;
+  }
+  .hot-promo-text {
+    margin-top: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hot-promo-text div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: -webkit-fit-content;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+  .trending,
+  .suggestion {
+    -webkit-box-pack: normal !important;
+        -ms-flex-pack: normal !important;
+            justify-content: normal !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 16px;
+  }
+  .lp-hide {
+    display: none;
+  }
+  .course-box {
+    margin: 5px;
+  }
+  .hot-promo {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .hot-ads .hot-promo-text {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .hot-ads .hot-promo-text h5,
+  .hot-ads .hot-promo-text .course-price,
+  .hot-ads .hot-promo-text .course-star,
+  .hot-ads .hot-promo-text .big-button {
+    width: 100%;
+  }
+  .hot-promo-video-n-text {
+    margin-top: -20px;
+  }
+}
+
+.empty-a {
+  height: 0;
+}
+
+.categorie-anchor {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 120px;
+          flex: 1 1 120px;
+  max-width: 120px;
 }
 /*# sourceMappingURL=styles.css.map */
