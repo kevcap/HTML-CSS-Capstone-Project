@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RocketK</title>
+  <title>Rocket Courses</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2020-04-07/52fe70f6743641ab9ef7917f42999894.ico.png" type="image/x-icon">
@@ -12,7 +12,6 @@
   <header class="header-container">
       <div class="logo">
         <a href="#">
-
         </a>
       </div>
       <a href="#">Collections</a>
@@ -30,14 +29,20 @@
     
     <div class="first-section">
       <div class="first-section-left">
-        <h1>A cool name</h1>
+        <h1>Rocket Courses</h1>
         <h3>We can take you there</h3>
-        <div class="search-content mt-4">
-          <input type="text" class="search" placeholder="Search">
-          <button class="search-button">
-            <svg enable-background="new 0 0 21 21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h21v21h-21z"/></clipPath><g clip-path="url(#a)"><path d="m8.5 1c4.1 0 7.5 3.4 7.5 7.5 0 1.8-.6 3.5-1.8 4.8l-.4.5-.5.4c-1.3 1.2-3 1.8-4.8 1.8-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5m0-1c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5c2.1 0 4-.7 5.5-2l5.5 5.5 1.1-1.1-5.6-5.4c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5z"/></g></svg>
-          </button>
-        </div>
+        <form class="search-content mt-4" action="search.html">
+          <div class="dropdown d-flex">
+            <input type="text" class="search dropdown-toggle" placeholder="Search" id="test" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--
+            --><button class="search-button" type="submit">
+              <svg enable-background="new 0 0 21 21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h21v21h-21z"/></clipPath><g clip-path="url(#a)"><path d="m8.5 1c4.1 0 7.5 3.4 7.5 7.5 0 1.8-.6 3.5-1.8 4.8l-.4.5-.5.4c-1.3 1.2-3 1.8-4.8 1.8-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5m0-1c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5c2.1 0 4-.7 5.5-2l5.5 5.5 1.1-1.1-5.6-5.4c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5z"/></g></svg>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="test" >
+              <a class="dropdown-item" href="search.html">Front-end</a>
+              <a class="dropdown-item" href="search.html">AngularJS</a>
+            </div>
+          </div>
+        </form>
         
       </div>
       <div class="logo position-relative">
@@ -204,7 +209,7 @@
       
     </section>
     
-    <section class="suggestion">
+    <section class="suggestion mt-4">
       <h4>Suggestion: Aws</h4> <a href="#" class="show-all">Show All</a>
       <div class="course-box">
         <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/1d/714104d1c241e8981bb58390da9811/Option-2_1.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF" alt="code">
@@ -258,6 +263,15 @@
     </section>
 
   </main>
+  <footer class="d-flex flex-column align-items-center container">
+    <p>Rocket Inc. 2020</p>
+    <ul class="d-flex">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
   crossorigin="anonymous"></script>

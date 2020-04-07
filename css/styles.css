@@ -384,7 +384,7 @@ section > .show-all {
   max-width: 20%;
   min-width: 260px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   -webkit-transition: background-color ease-in 100ms;
   transition: background-color ease-in 100ms;
@@ -446,6 +446,10 @@ section > .show-all {
   color: #888;
 }
 
+.dropdown {
+  width: 90%;
+}
+
 .add-to-cart {
   margin-top: 10px;
   border: none;
@@ -458,5 +462,27 @@ section > .show-all {
 
 .add-to-cart:hover {
   background-color: #c02940;
+}
+
+/* WORKING ON FOOTER */
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.486);
+  border-width: thin;
+}
+
+footer p::after {
+  content: "©";
+  margin-left: 5px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
