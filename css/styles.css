@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.categorie, .course-box {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
 .star {
   display: block;
 }
@@ -15,13 +19,13 @@ body {
 }
 
 body {
-  background-color: #2d3033;
+  background-color: #f9fbfd;
 }
 
 header {
-  height: 50px;
-  padding: 10px;
-  background-color: #181c20;
+  height: 60px;
+  padding: 10px 20px;
+  background-color: #14152b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,9 +37,26 @@ header {
           align-items: center;
 }
 
+header a {
+  color: #fff;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .logo {
+  margin-left: 5px;
+}
+
 /* WORKING ON HEADER */
-.logo svg {
+.logo a {
   height: 40px;
+  background: url("../img/logo.png") no-repeat;
+  display: block;
+  width: 40px;
+  background-size: contain;
 }
 
 .carrinho svg {
@@ -52,7 +73,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: tomato;
+  background-color: #9dc5c3;
+  background-image: linear-gradient(315deg, #5e5c5c 0%, #7aadab 74%);
   height: 300px;
   border-radius: 10px;
   margin: 40px 10px;
@@ -60,10 +82,35 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px;
+  overflow: hidden;
+}
+
+.first-section .logo a {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  position: relative;
+  top: 107px;
+  right: -101px;
+}
+
+.first-section .clouds {
+  background: url("https://svgsilh.com/svg/1295100.svg") no-repeat;
+  background-size: auto;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  z-index: -1;
+  background-size: contain;
+  top: 1px;
+  right: -67px;
+  z-index: 0;
 }
 
 .first-section-left {
   width: 40%;
+  margin-left: 70px;
 }
 
 /* WORKING ON SEARCH */
@@ -80,7 +127,9 @@ header {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: none;
-  width: 100%;
+  width: 57%;
+  -webkit-transition: width ease-in 400ms;
+  transition: width ease-in 400ms;
 }
 
 .search::-webkit-input-placeholder {
@@ -97,6 +146,10 @@ header {
 
 .search::placeholder {
   font-style: italic;
+}
+
+.search:focus {
+  width: 80%;
 }
 
 .search-button {
@@ -129,20 +182,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px;
+  margin: 40px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.categories a:hover {
+.categories a:hover:not(.show-all) {
   text-decoration: none;
 }
 
 section > h4,
 section > .show-all {
   width: 50%;
-  color: #fff;
-  margin-bottom: 30px;
+  color: #383838;
+  margin-bottom: 15px;
 }
 
 .show-all {
@@ -150,7 +203,7 @@ section > .show-all {
 }
 
 .categories a + a {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .categorie {
@@ -251,7 +304,7 @@ section > .show-all {
 }
 
 .hot-promo-features h6 {
-  max-width: 120px;
+  max-width: 154px;
 }
 
 /* TRENDING SECTION */
@@ -345,24 +398,5 @@ section > .show-all {
 
 .add-to-cart:hover {
   background: #d7d8d8;
-}
-
-.section-title {
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-title::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: url("https://www.alura.com.br/assets/api/cursos/introducao-html-css.svg");
-  margin: 0 10px;
 }
 /*# sourceMappingURL=styles.css.map */
