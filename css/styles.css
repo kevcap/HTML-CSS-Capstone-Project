@@ -80,7 +80,8 @@ h3 {
 
 h4,
 h5,
-h6 {
+h6,
+option {
   font-family: "HelvNeue", 'Times New Roman', Times, serif;
 }
 
@@ -141,8 +142,6 @@ header .login {
   background-color: #9dc5c3;
   background-image: linear-gradient(315deg, #5e5c5c 0%, #7aadab 74%);
   height: 300px;
-  border-radius: 10px;
-  margin: 40px 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -201,7 +200,7 @@ header .login {
 }
 
 .first-section-left .search-content {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .first-section-left .logo, .first-section-left .logo a {
@@ -219,15 +218,20 @@ header .login {
   margin: 0 auto;
 }
 
+.form-select {
+  border: none;
+  width: 100px;
+}
+
 .search {
-  padding: 8px 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  margin-left: auto;
+  padding: 8px 10px;
   border: none;
-  width: 57%;
+  width: 55%;
   -webkit-transition: width ease-in 400ms;
   transition: width ease-in 400ms;
-  margin-left: auto;
 }
 
 .search::-webkit-input-placeholder {
@@ -249,6 +253,12 @@ header .login {
 .search:focus {
   width: 80%;
   outline: none;
+}
+
+.search2 {
+  width: 70px;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .search-button {
@@ -650,11 +660,22 @@ main > form .search {
 }
 
 @media (min-width: 768px) {
+  .form-select {
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .search {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 35%;
+  }
   .course-box {
     max-width: 40%;
   }
   .first-section-left .search-content {
-    max-width: 500px;
+    max-width: 70%;
   }
 }
 
