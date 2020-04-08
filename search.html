@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header-container">
-      <div class="logo">
+      <div class="logo mr-2">
         <a href="index.html">
         </a>
       </div>
@@ -63,172 +63,161 @@
         </a>
       </div>
   </header>
-  <main class="container">
-    <a href="index.html" class="mx-3">← Go back home</a>
-    <form class="search-content mt-4" action="search.html">
-      <div class="dropdown d-flex mx-auto">
-        <input type="text" class="search dropdown-toggle" placeholder="Search" id="test" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--
-        --><button class="search-button" type="submit">
-          <svg enable-background="new 0 0 21 21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h21v21h-21z"/></clipPath><g clip-path="url(#a)"><path d="m8.5 1c4.1 0 7.5 3.4 7.5 7.5 0 1.8-.6 3.5-1.8 4.8l-.4.5-.5.4c-1.3 1.2-3 1.8-4.8 1.8-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5m0-1c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5c2.1 0 4-.7 5.5-2l5.5 5.5 1.1-1.1-5.6-5.4c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5z"/></g></svg>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="test" >
-          <a class="dropdown-item" href="search.html">Front-end</a>
-          <a class="dropdown-item" href="search.html">AngularJS</a>
+  <main>
+ <div class="first-div-search pb-3">
+  <a href="index.html" class="mx-3 pt-4 d-block" > &#8592; Go back home</a>
+  <form class="search-content mt-4" action="search.html">
+    <div class="dropdown d-flex mx-auto">
+      <input type="text" class="search dropdown-toggle" placeholder="Search" id="test" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--
+      --><button class="search-button" type="submit">
+        <svg enable-background="new 0 0 21 21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h21v21h-21z"/></clipPath><g clip-path="url(#a)"><path d="m8.5 1c4.1 0 7.5 3.4 7.5 7.5 0 1.8-.6 3.5-1.8 4.8l-.4.5-.5.4c-1.3 1.2-3 1.8-4.8 1.8-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5m0-1c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5c2.1 0 4-.7 5.5-2l5.5 5.5 1.1-1.1-5.6-5.4c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5z"/></g></svg>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="test" >
+        <a class="dropdown-item" href="search.html">Front-end</a>
+        <a class="dropdown-item" href="search.html">AngularJS</a>
+      </div>
+    </div>
+  </form>
+  <div class="container">
+    <h2 class="mt-5">Search result: </h2>
+    <p class="pb-2 d-block">Sorry, we didn't recognize what you've searched. Here are some suggestions based on your preferences: </p>
+    <a href="#" class="hide-filter pb-3">Filter &#187;</a>
+  </div>
+ </div>
+    <div class="d-flex container mt-4">
+      <div class="search-sidebar show-sidebar">
+        <div class="d-flex first-search-div">
+          <label for="course"><input type="checkbox" id="course" class="d-block">Course</label>
+          <label for="course2"><input type="checkbox" id="course2" class="d-block">Path</label>
+        </div>
+        <div>
+          <h6>Price</h6>
+          <div>
+            <label for="course3"><input type="checkbox" id="course3" class="d-block">> US$ 1.000</label>
+            <label for="course4"><input type="checkbox" id="course4" class="d-block">US$ 1.000 ~ US$ 500</label>
+            <label for="course5"><input type="checkbox" id="course5" class="d-block">US$ 499 ~ US$ 250</label>
+            <label for="course6"><input type="checkbox" id="course6" class="d-block"> < US$ 249 </label>
+          </div>
+        </div>
+        <div>
+          <h6>Categorie</h6>
+          <div>
+            <label for="course12"><input type="checkbox" id="course12" class="d-block">Front-end</label>
+            <label for="course13"><input type="checkbox" id="course13" class="d-block">Backend</label>
+            <label for="course14"><input type="checkbox" id="course14" class="d-block">Mobile</label>
+            <label for="course15"><input type="checkbox" id="course15" class="d-block">Full-stack</label>
+            <label for="course16"><input type="checkbox" id="course16" class="d-block">Data Science</label>
+        </div>
+        </div>
+        <div>
+          <h6>Evaluation</h6>
+          <div>
+            <label for="course7"><input type="checkbox" id="course7" class="d-block">★★★★★</label>
+            <label for="course8"><input type="checkbox" id="course8" class="d-block">★★★★</label>
+            <label for="course9"><input type="checkbox" id="course9" class="d-block">★★★</label>
+            <label for="course10"><input type="checkbox" id="course10" class="d-block">★★</label>
+            <label for="course11"><input type="checkbox" id="course11" class="d-block">★</label>
+        </div>
         </div>
       </div>
-    </form>
-    <h2 class="mt-5">Search result: </h2>
-    <p class="mt-4">Sorry, we didn't recognize what you've searched. Here are some suggestions based on your preferences: </p>
-
-    <section class="search-section trending">
-      <div class="container d-flex flex-wrap justify-content-around">
-        <div class="course-box">
-          <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
-          <div class="text">
-          <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
-          <div>
-            <span class="course-star star px-2">(13.044 reviews)
-            </span>
-            <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
-            <button class="add-to-cart">add to cart</button>
+      <section class="search-section trending">
+        <h4 class="d-none">Section title</h4>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
           </div>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://pluralsight.imgix.net/course-images/react-js-getting-started-v2.png" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Advanced ReactJS</h4></a>
-            <div>
-              <span class="course-star star px-2">(3.820 reviews)
-              </span>
-              <span class="course-price px-2">US$ 142 <strike>US$ 315</strike></span>
-              <button class="add-to-cart">add to cart</button>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-box course-search">
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <strike>US$ 365</strike></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="course-box">
-          <img class="course-img" src="https://pluralsight.imgix.net/course-images/javascript-getting-started-v1.png" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>JavaScript: Getting Started</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-        <div class="course-box">
-          <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
-          <div class="text">
-            <a href="#" class="course-title"><h4>Object Oriented Programming in Java</h4></a>
-            <div>
-              <span class="course-star star px-2">(10.544 reviews)
-              </span>
-              <span class="course-price px-2">US$ 64 <strike>US$ 125</strike></span>
-              <button class="add-to-cart">add to cart</button>
-            </div>
-          </div>
-        </div>
-       </div>
-      
-    </section>
+        
+      </section>
+    </div>
   </main>
 
   <footer class="container">
@@ -269,7 +258,7 @@
            <li><a href="#">Contact</a></li>
            <li><a href="#">About</a></li>
            <li><a href="#">FAQ</a></li>
-           <li><a href="#">Work with us</a></li>
+
          </ul>
        </div>
      </div>
