@@ -43,7 +43,7 @@
 
 ## 🔴 Live Demo
 
-[Live Demo](https://rawcdn.githack.com/kevinfrontend/newsweek-clone/2cd0c4217d7504395e455bfe0148943eab94d238/index.html)
+[Live Demo](https://raw.githack.com/kevinfrontend/HTML-CSS-Capstone-Project/features/index.html)
 
 ### 🛠 Installing <a name = "installing"></a>
 
