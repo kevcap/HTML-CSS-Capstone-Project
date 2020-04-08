@@ -583,6 +583,23 @@ footer,
 .footer-1st-div {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-div {
+  width: 100%;
+}
+
+.footer-div > div {
+  margin: 0 auto;
+}
+
+.language-container {
+  height: -webkit-fit-content;
+  height: fit-content;
+  height: -moz-fit-content;
 }
 
 .footer-logo {
@@ -657,6 +674,12 @@ main > form .search {
   .hot-ads .video-text h6 {
     display: block;
   }
+  .footer-div {
+    width: unset;
+  }
+  .footer-div > div {
+    margin: unset;
+  }
 }
 
 @media (min-width: 768px) {
@@ -680,6 +703,9 @@ main > form .search {
 }
 
 @media (min-width: 980px) {
+  .footer-logo {
+    max-width: 30%;
+  }
   .course-box {
     max-width: 20%;
     -webkit-box-flex: 1;
