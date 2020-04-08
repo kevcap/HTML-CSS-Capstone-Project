@@ -23,7 +23,8 @@
 
 
 ## 🧐 About <a name = "about"></a>
-<h3 align="center"> This is an assigment for Microverse's HTML and CSS course, and the goal is to... </h3>
+<h3 align="center"> This is an assigment for Microverse's HTML and CSS course, and the goal is to build your own personalized page, taking <a href="https://www.behance.net/gallery/24796463/ZATTIX">this</a> page as parameter.</h3>
+
 <p align="center">
   <a href="" rel="noopener">
  <img src="./img/screenshot.gif" alt="Project Screenshot"></a>
