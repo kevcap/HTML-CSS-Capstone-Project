@@ -36,12 +36,9 @@
 
 - [HTML and CSS](https://www.w3schools.com/) - HTML5 and CSS3
 - [Sass](https://www.sass.com/) - HTML5 and CSS3
-- [JQuery](https://www.google.com/)
-- [Vanilla JS](https://#)
 - [Stickler](https://stickler-ci.com) - A CSS Linter 
 - [W3 HTML Validator](https://validator.w3.org/) - A Markup Validation Service
 - [Bootstrap 4](https://getbootstrap.com/);
-- [Photoshop CC](https://adobe.com);
 
 ## 🔴 Live Demo
 
@@ -73,13 +70,6 @@ Feel free to check the [issues page](https://github.com/kevinfrontend/newsweek-c
 ## 👍 Show your support
 
 Give a ⭐️ if you like this project!
-
-
-## 👊 Acknowledgments
-
-- [Lazyload](https://github.com/verlok/lazyload)
-- [OpenWeather](https://openweathermap.org)
-- [IpGeolocation](https://ipgeolocation.io/)
 
 
 ## 📝 License
