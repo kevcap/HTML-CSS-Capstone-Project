@@ -562,8 +562,9 @@ section > h4 {
   display: block;
 }
 
-.course-price strike {
+.course-price span {
   color: #888;
+  text-decoration: line-through;
 }
 
 .dropdown {
@@ -867,7 +868,6 @@ main > form .search {
     margin-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    width: 35%;
   }
   .course-box {
     max-width: 40%;
