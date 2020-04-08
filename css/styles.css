@@ -136,8 +136,39 @@ footer a {
   color: #d35266;
 }
 
+.home-svg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.home-svg svg {
+  width: 25px;
+  fill: #d35266;
+}
+
 header a {
-  color: #fff;
+  color: #d35266;
+}
+
+.search-button svg {
+  fill: #414141;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.cart-list {
+  margin-left: 10px;
+}
+
+.cart-list svg {
+  height: 30px;
+  fill: #d35266;
+}
+
+.home-svg svg:hover,
+.cart-list svg:hover {
+  fill: white;
 }
 
 .logo a {
@@ -157,6 +188,11 @@ header a {
   color: #d35266;
 }
 
+header a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 main a:hover,
 footer a:hover {
   color: #d35266;
@@ -166,7 +202,7 @@ header {
   height: 60px;
   padding: 10px 20px;
   padding-right: 10px;
-  background-color: #d35266;
+  background-color: #383838;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -175,24 +211,9 @@ header {
   align-items: center;
 }
 
-header a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-
-header .logo {
-  margin-left: 5px;
-}
-
 header .login {
   border: none;
   border-radius: 10px;
-}
-
-/* WORKING ON HEADER */
-.cart-list svg {
-  height: 30px;
-  fill: white;
 }
 
 /* WORKING ON FIRST SECTION */
@@ -316,13 +337,6 @@ header .login {
 
 .search-button:focus {
   outline: none;
-}
-
-.search-button svg {
-  fill: #414141;
-  height: 50%;
-  display: block;
-  margin: 0 auto;
 }
 
 .search-button:hover {
@@ -835,6 +849,14 @@ footer ul li {
 
   header {
     font-size: 1.2rem;
+  }
+
+  .header-container .logo {
+    margin-left: 12%;
+  }
+
+  .cart-list {
+    margin-right: 12%;
   }
 
   .first-section-left h1 {
