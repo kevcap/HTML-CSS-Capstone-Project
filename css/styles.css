@@ -600,6 +600,7 @@ footer,
   height: -webkit-fit-content;
   height: fit-content;
   height: -moz-fit-content;
+  max-width: 200px;
 }
 
 .footer-logo {
@@ -652,6 +653,46 @@ footer ul {
 footer ul li {
   list-style-type: none;
   padding: 5px;
+}
+
+.genericon {
+  display: inline-block;
+  color: #666;
+  margin-right: 10px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.genericon:hover {
+  text-decoration: none;
+}
+
+.genericon-facebook:hover {
+  color: #3b5998;
+}
+
+.genericon-twitter:hover {
+  color: #1da1f2;
+}
+
+.genericon-instagram {
+  font-size: 23px;
+}
+
+.genericon-instagram:hover {
+  color: #1da1f2;
+}
+
+.genericon-tumblr {
+  font-size: 20px;
+}
+
+.genericon-tumblr:hover {
+  color: #35465c;
+}
+
+.genericon-linkedin:hover {
+  color: #0077b5;
 }
 
 main > form .search {
