@@ -196,7 +196,6 @@ header a {
 .language-container a {
   padding: 3px 2px;
   border: 3px solid #d35266;
-  border-radius: 2px;
   width: 70px;
   text-align: center;
   color: #d35266;
@@ -227,7 +226,6 @@ header {
 
 header .login {
   border: none;
-  border-radius: 10px;
 }
 
 /* WORKING ON FIRST SECTION */
@@ -420,7 +418,6 @@ section > h4 {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 8px;
   -webkit-transition: -webkit-transform 70ms ease-in;
   transition: -webkit-transform 70ms ease-in;
   transition: transform 70ms ease-in;
@@ -445,7 +442,6 @@ section > h4 {
 .hot-ads {
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
 }
 
 .hot-promo-features h6 {
@@ -473,7 +469,6 @@ section > h4 {
   display: block;
   max-height: 350px;
   background-size: cover;
-  border-radius: 4px;
 }
 
 .hot-ads .video-text {
@@ -542,7 +537,6 @@ section > h4 {
   border: none;
   color: white;
   background-color: #d35266;
-  border-radius: 10px;
   padding: 3px;
   -webkit-transition: background-color linear 300ms;
   transition: background-color linear 300ms;
@@ -605,7 +599,6 @@ section > h4 {
   max-width: 73%;
   min-width: 260px;
   background-color: #fff;
-  border-radius: 10px;
   padding: 10px;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -627,7 +620,6 @@ section > h4 {
 
 .course-box img {
   height: 170px;
-  border-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -654,7 +646,6 @@ section > h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 4px;
   text-transform: capitalize;
   background-color: #d35266;
   color: white;
