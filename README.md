@@ -17,13 +17,15 @@
 <p align="center">
 <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#installing">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#built_using">Build with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#authors">Authors</a>
+<a href="#built_using">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#live-demo">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#presentation">Presentation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
 </p>
 
 
 ## 🧐 About <a name = "about"></a>
-<h3 align="center"> This is an assigment for Microverse's HTML and CSS course, and the goal is to build your own personalized page, taking <a href="https://www.behance.net/gallery/24796463/ZATTIX">this</a> page as parameter.</h3>
+<h3 align="center"> This is an assigment for Microverse's HTML and CSS course, and the goal is to build your own personalized page, taking <a href="https://www.behance.net/gallery/24796463/ZATTIX">this</a> project as parameter, so I designed a online courses shop, like udemy, pluralsight and others.</h3>
 
 <p align="center">
   <a href="" rel="noopener">
@@ -42,9 +44,13 @@
 - [JQuery](https://www.jquery.com/) - The Write Less, Do More, JavaScript Library;
 - [PhotoShop CC](https://adobe.com/) - The most powerfull photo editor ever made;
 
-## 🔴 Live Demo
+## 🔴 Live Demo <a name = "live-demo"></a>
 
 [Live Demo](https://raw.githack.com/kevinfrontend/HTML-CSS-Capstone-Project/features/index.html)
+
+## 📺 Video Presentation <a name = "presentation"></a>
+
+[Video Presentation](https://www.loom.com/share/caf9c0ce3cec45258e279555f6582b84)
 
 ### 🛠 Installing <a name = "installing"></a>
 
