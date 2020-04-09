@@ -70,8 +70,6 @@ header,
 }
 
 .search {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   margin-left: auto;
   padding: 8px 10px;
   border: none;
@@ -153,7 +151,7 @@ footer a {
 }
 
 .home-svg svg {
-  width: 25px;
+  width: 20px;
   fill: #d35266;
   transition: fill ease 300ms;
 }
@@ -175,7 +173,7 @@ header a {
 }
 
 .cart-list svg {
-  height: 30px;
+  height: 25px;
   fill: #d35266;
   transition: fill ease 300ms;
 }
@@ -345,8 +343,6 @@ header .login {
   width: 50px;
   height: 100%;
   border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   -webkit-transition: background 200ms linear;
   transition: background 200ms linear;
   margin-right: auto;
@@ -918,8 +914,6 @@ footer ul li {
 @media (min-width: 768px) {
   .form-select {
     margin-left: auto;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
   }
 
   .first-section-left h1 {
@@ -928,8 +922,6 @@ footer ul li {
 
   .first-section .search {
     margin-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
   }
 
   .course-box {
