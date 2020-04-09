@@ -3,8 +3,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/kevinfrontend/newsweek-clone/issues)
-[![GitHub2 Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/kevinfrontend/newsweek-clone/pulls)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/kevinfrontend/HTML-CSS-Capstone-Project/issues)
+[![GitHub2 Pull Requests](https://github.com/kevinfrontend/HTML-CSS-Capstone-Project/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![Made By](https://img.shields.io/badge/Made%20By-Kevin%20Alves-brightgreen)](https://github.com/kevinfrontend)
 [![Twitter Follow](https://img.shields.io/twitter/follow/kevinfrontend?label=Follow%20Kevin%20on%20Twitter&style=social)](https://twitter.com/kevinfrontend)
@@ -66,7 +66,7 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kevinfrontend/newsweek-clone/issues).
+Feel free to check the [issues page](https://github.com/kevinfrontend/HTML-CSS-Capstone-Project/issues).
 
 
 ## 👍 Show your support
