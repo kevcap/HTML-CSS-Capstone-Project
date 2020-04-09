@@ -235,8 +235,8 @@ header .login {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #9dc5c3;
-  background-image: linear-gradient(315deg, #5e5c5c 0%, #7aadab 74%);
+  background-color: #e66f73;
+  background-image: linear-gradient(315deg, #e06468 0%, #f9c1b1 74%);
   height: 300px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -799,9 +799,10 @@ footer ul li {
 }
 
 /* WORKING ON SEARCH PAGE */
+
 .first-div-search {
-  background-color: #9dc5c3;
-  background-image: linear-gradient(315deg, #5e5c5c 0%, #7aadab 74%);
+  background-color: #e66f73;
+  background-image: linear-gradient(315deg, #e06468 0%, #f9c1b1 74%);
 }
 
 .search-sidebar {
