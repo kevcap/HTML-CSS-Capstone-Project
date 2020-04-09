@@ -39,6 +39,7 @@
 - [Stickler](https://stickler-ci.com) - A CSS Linter 
 - [W3 HTML Validator](https://validator.w3.org/) - A Markup Validation Service
 - [Bootstrap 4](https://getbootstrap.com/) - The most popular HTML, CSS, and JS library in the world;
+- [JQuery](https://www.jquery.com/) - The Write Less, Do More, JavaScript Library;
 - [PhotoShop CC](https://adobe.com/) - The most powerfull photo editor ever made;
 
 ## 🔴 Live Demo
