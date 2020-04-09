@@ -46,6 +46,7 @@
 p,
 a {
   font-size: 1rem;
+  outline: none;
 }
 
 .go-back {
@@ -336,6 +337,10 @@ header .login {
   width: 70px;
   border: none;
   border-left: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.search2:focus {
+  outline: none;
 }
 
 .search-button {
