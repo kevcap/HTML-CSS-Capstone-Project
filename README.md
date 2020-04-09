@@ -46,7 +46,7 @@
 
 ## 🔴 Live Demo <a name = "live-demo"></a>
 
-[Live Demo](https://raw.githack.com/kevinfrontend/HTML-CSS-Capstone-Project/features/index.html)
+[Live Demo](https://rawcdn.githack.com/kevinfrontend/HTML-CSS-Capstone-Project/80499605d8704766ebb4db52f8d89ccee5e8df5d/index.html)
 
 ## 📺 Video Presentation <a name = "presentation"></a>
 
