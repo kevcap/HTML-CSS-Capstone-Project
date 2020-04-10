@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocket Courses | Search Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://raw.githack.com/kevinfrontend/my_cnds/master/rocket.css">
+  <link rel="stylesheet" href="https://rawcdn.githack.com/kevinfrontend/Apple-project/b6867ed9bd5687301546768b8a49e0f84d4f4761/genericons.css">
+  <link rel="shortcut icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2020-04-08/4d2ea5e72dfe65f728c795edcbf6ab88.ico.png" type="image/x-icon">
+</head>
+<body>
+ <header class="header-container">
+      <div class="logo mr-2">
+        <a href="index.html">
+        </a>
+      </div>
+      <a href="index.html" class="home-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.298 460.297" x="0px" y="0px" width="460.298px" height="460.297px" xml:space="preserve" version="1.1">
+          <g>
+            <g>
+              <path d="M 230.149 120.939 L 65.986 256.274 c 0 0.191 -0.048 0.472 -0.144 0.855 c -0.094 0.38 -0.144 0.656 -0.144 0.852 v 137.041 c 0 4.948 1.809 9.236 5.426 12.847 c 3.616 3.613 7.898 5.431 12.847 5.431 h 109.63 V 303.664 h 73.097 v 109.64 h 109.629 c 4.948 0 9.236 -1.814 12.847 -5.435 c 3.617 -3.607 5.432 -7.898 5.432 -12.847 V 257.981 c 0 -0.76 -0.104 -1.334 -0.288 -1.707 L 230.149 120.939 Z" />
+              <path d="M 457.122 225.438 L 394.6 173.476 V 56.989 c 0 -2.663 -0.856 -4.853 -2.574 -6.567 c -1.704 -1.712 -3.894 -2.568 -6.563 -2.568 h -54.816 c -2.666 0 -4.855 0.856 -6.57 2.568 c -1.711 1.714 -2.566 3.905 -2.566 6.567 v 55.673 l -69.662 -58.245 c -6.084 -4.949 -13.318 -7.423 -21.694 -7.423 c -8.375 0 -15.608 2.474 -21.698 7.423 L 3.172 225.438 c -1.903 1.52 -2.946 3.566 -3.14 6.136 c -0.193 2.568 0.472 4.811 1.997 6.713 l 17.701 21.128 c 1.525 1.712 3.521 2.759 5.996 3.142 c 2.285 0.192 4.57 -0.476 6.855 -1.998 L 230.149 95.817 l 197.57 164.741 c 1.526 1.328 3.521 1.991 5.996 1.991 h 0.858 c 2.471 -0.376 4.463 -1.43 5.996 -3.138 l 17.703 -21.125 c 1.522 -1.906 2.189 -4.145 1.991 -6.716 C 460.068 229.007 459.021 226.961 457.122 225.438 Z" />
+            </g>
+          </g>
+          </svg>
+      </a>
+      <a href="index.html" class="ml-1 d-none d-sm-block">Home</a>
+      <a href="#" class="home-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <path d="M400,0H112C50.144,0,0,50.144,0,112v288c0,61.856,50.144,112,112,112h288c61.856,0,112-50.144,112-112V112     C512,50.144,461.856,0,400,0z M480,400c0,44.183-35.817,80-80,80H112c-44.183,0-80-35.817-80-80V112c0-44.183,35.817-80,80-80     h288c44.183,0,80,35.817,80,80V400z"/>
+                <path d="M160,112h-32c-8.837,0-16,7.163-16,16v32c0,8.837,7.163,16,16,16h32c8.837,0,16-7.163,16-16v-32     C176,119.163,168.837,112,160,112z"/>
+                <path d="M160,224h-32c-8.837,0-16,7.163-16,16v32c0,8.837,7.163,16,16,16h32c8.837,0,16-7.163,16-16v-32     C176,231.163,168.837,224,160,224z"/>
+                <path d="M160,336h-32c-8.837,0-16,7.163-16,16v32c0,8.837,7.163,16,16,16h32c8.837,0,16-7.163,16-16v-32     C176,343.163,168.837,336,160,336z"/>
+                <rect x="208" y="128" width="192" height="32"/>
+                <rect x="208" y="240" width="192" height="32"/>
+                <rect x="208" y="352" width="192" height="32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <a href="#" class="ml-1 d-none d-sm-block mr-auto">Collections</a>
+
+      <a href="#" class="rocket-button">
+        <div class="default">Login</div>
+        <div class="success">
+            <svg>
+                <use xlink:href="#check"></use>
+            </svg>
+            <div>Logged</div>
+        </div>
+        <div class="animation">
+            <div class="rocket">
+                <svg>
+                    <use xlink:href="#rocket"></use>
+                </svg>
+            </div>
+            <div class="smoke">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+    </a>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11" id="check">
+            <polyline stroke="currentColor" points="1 5.5 5 9.5 12 1.5"></polyline>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" id="rocket">
+            <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 L8.66666667,31 C4.22222222,19.0350877 5.33333333,8.70175439 12,0 Z" fill="var(--rocket)"></path>
+            <path d="M12,0 C5.33333333,8.70175439 4.22222222,19.0350877 8.66666667,31 C6.72222222,17.9473684 7.83333333,7.61403509 12,0 Z" fill="var(--rocket-shadow-left)"></path>
+            <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 C17.2777778,17.9473684 16.1666667,7.61403509 12,0 Z" fill="var(--rocket-shadow-right)"></path>
+            <path d="M22.2399372,27.25 C21.2403105,25.558628 19.4303122,23.808628 16.21,22 L15,31 L17.6512944,31 C18.2564684,31 18.8216022,31.042427 19.1572924,31.5292747 L21.7379379,35.271956 C22.0515593,35.7267976 22.5795404,36 23.1449294,36 C23.5649145,36 23.9142153,35.7073938 23.9866527,35.3215275 L24,35.146217 L23.9987214,35.1196135 C23.7534506,31.4421183 23.1671892,28.8189138 22.2399372,27.25 Z" fill="var(--rocket-wing-right)"></path>
+            <path d="M1.76006278,27.25 C2.75968951,25.558628 4.56968777,23.808628 7.79,22 L9,31 L6.34870559,31 C5.74353157,31 5.17839777,31.042427 4.84270762,31.5292747 L2.2620621,35.271956 C1.94844071,35.7267976 1.42045963,36 0.855070627,36 C0.435085457,36 0.0857846604,35.7073938 0.0133472633,35.3215275 L0,35.146217 L0.00127855763,35.1196135 C0.24654935,31.4421183 0.832810758,28.8189138 1.76006278,27.25 Z" fill="var(--rocket-wing-left)"></path>
+            <circle fill="var(--rocket-window-shadow)" cx="12" cy="12" r="3"></circle>
+            <circle fill="var(--rocket-window)" cx="12" cy="12" r="2.5"></circle>
+            <path d="M15.6021597,5.99977504 L8.39784027,5.99977504 C8.54788101,5.6643422 8.70496315,5.3309773 8.86908669,4.99968036 L15.1309133,4.99968036 C15.2950369,5.3309773 15.452119,5.6643422 15.6021597,5.99977504 Z" fill-opacity="0.3" fill="var(--rocket-line)"></path>
+        </symbol>
+    </svg>
+
+      <div class="cart-list">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <path d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zm-12-32v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4h-23.15c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24l1.79-3.26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96 0-1.11-.9-2-2-2h-29.57l-1.9-4h-6.53zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z"/>
+            <path d="M0 0h48v48h-48z" fill="none"/>
+          </svg>
+        </a>
+      </div>
+      <a href="index.html" class="ml-1 d-none d-sm-block purchase-list">Purchase List</a>
+  </header>
+  <main>
+ <div class="first-div-search pb-3">
+  <a href="index.html" class="mx-3 pt-4 d-block go-back" > &#8592; Go back home</a>
+  <form class="search-content mt-4" action="search.html">
+    <div class="dropdown d-flex mx-auto">
+      <input type="text" class="search dropdown-toggle" placeholder="Search" id="test" data-toggle="dropdown" aria-haspopup="true"><button class="search-button" type="submit">
+        <svg enable-background="new 0 0 21 21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h21v21h-21z"/></clipPath><g clip-path="url(#a)"><path d="m8.5 1c4.1 0 7.5 3.4 7.5 7.5 0 1.8-.6 3.5-1.8 4.8l-.4.5-.5.4c-1.3 1.2-3 1.8-4.8 1.8-4.1 0-7.5-3.4-7.5-7.5s3.4-7.5 7.5-7.5m0-1c-4.7 0-8.5 3.8-8.5 8.5s3.8 8.5 8.5 8.5c2.1 0 4-.7 5.5-2l5.5 5.5 1.1-1.1-5.6-5.4c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5z"/></g></svg>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="test" >
+        <a class="dropdown-item" href="search.html">Front-end</a>
+        <a class="dropdown-item" href="search.html">AngularJS</a>
+      </div>
+    </div>
+  </form>
+  <div class="container">
+    <h1 class="mt-5">Search result: </h1>
+    <p class="pb-2 d-block">Sorry, we didn't recognize what you've searched. Here are some suggestions based on your preferences: </p>
+    <a href="#" class="hide-filter pb-3">Filter &#187;</a>
+  </div>
+ </div>
+    <div class="d-flex container mt-4">
+      <div class="search-sidebar show-sidebar">
+        <div class="d-flex first-search-div">
+          <label for="course"><input type="checkbox" id="course" class="d-block">Course</label>
+          <label for="course2"><input type="checkbox" id="course2" class="d-block">Path</label>
+        </div>
+        <div>
+          <h6>Price</h6>
+          <div>
+            <label for="course3"><input type="checkbox" id="course3" class="d-block">> US$ 1.000</label>
+            <label for="course4"><input type="checkbox" id="course4" class="d-block">US$ 1.000 ~ US$ 500</label>
+            <label for="course5"><input type="checkbox" id="course5" class="d-block">US$ 499 ~ US$ 250</label>
+            <label for="course6"><input type="checkbox" id="course6" class="d-block"> &lt; US$ 249 </label>
+          </div>
+        </div>
+        <div>
+          <h6>Categorie</h6>
+          <div>
+            <label for="course12"><input type="checkbox" id="course12" class="d-block">Front-end</label>
+            <label for="course13"><input type="checkbox" id="course13" class="d-block">Backend</label>
+            <label for="course14"><input type="checkbox" id="course14" class="d-block">Mobile</label>
+            <label for="course15"><input type="checkbox" id="course15" class="d-block">Full-stack</label>
+            <label for="course16"><input type="checkbox" id="course16" class="d-block">Data Science</label>
+        </div>
+        </div>
+        <div>
+          <h6>Evaluation</h6>
+          <div>
+            <label for="course7"><input type="checkbox" id="course7" class="d-block">★★★★★</label>
+            <label for="course8"><input type="checkbox" id="course8" class="d-block">★★★★</label>
+            <label for="course9"><input type="checkbox" id="course9" class="d-block">★★★</label>
+            <label for="course10"><input type="checkbox" id="course10" class="d-block">★★</label>
+            <label for="course11"><input type="checkbox" id="course11" class="d-block">★</label>
+        </div>
+        </div>
+      </div>
+      <section class="search-section trending">
+        <h4 class="d-none">Section title</h4>
+        <div class="d-flex flex-wrap justify-content-around">
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/ab/f9/thumbnail_abf906a7-d0dd-4a3e-8bc4-0ea8861ec9f3.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://pluralsight.imgix.net/course-images/react-js-getting-started-v2.png" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>ReactJS Basics: Getting Started</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://pluralsight.imgix.net/course-images/javascript-getting-started-v1.png" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>JavaScript: Getting Started</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f2/9b76f090b311e7ab563db169a953fb/programming-1896158_1280.jpg?auto=format%2Ccompress&dpr=1&w=268" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Amazon Web Services: Getting Started</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/1d/714104d1c241e8981bb58390da9811/Option-2_1.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Data Mining with Weka</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://ugc.futurelearn.com/uploads/images/7e/29/thumbnail_7e290d30-8e84-46b2-bf50-801246fb157c.jpg" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Amazon Web Services: Intermediate</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="course-box course-search"> <h6 class="d-none">article heading</h6>
+            <img class="course-img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f4/5219a4886e4feead04a706b73a9cd1/specialization_logo.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF" alt="code">
+            <div class="text">
+              <a href="#" class="course-title"><h4>Amazon Web Services: Advanced</h4></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem id eligendi dolore reprehenderit nesciunt sequi necessitatibus dolorum veniam soluta maxime!</p>
+              <div>
+                <span class="course-star star px-2">(13.044 reviews)
+                </span>
+                <span class="course-price px-2">US$ 132 <span>US$ 365</span></span>
+                <button class="add-to-cart">add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="show-all">Next Page &#187;</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="container">
+    <div class="footer-1st-div  d-flex flex-wrap">
+     <div class="footer-logo">
+       <div class="d-flex flex-column align-items-center">
+         <div class="logo d-flex">
+           <a href="#"></a>
+           <h3 class="ml-3">Rocket</h3>
+         </div>
+         <p class="w-75 text-justify mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloribus itaque magnam maxime laboriosam culpa eius cum, nisi minus dolorum vero aliquid tenetur officiis et in molestias. Voluptatibus, corrupti iusto.</p>
+       </div>
+     </div>
+     <div class="footer-div p-3">
+       <div class="footer-categories">
+         <h5>Categories</h5>
+         <ul class="d-flex flex-wrap">
+           <li><a href="#">Front-end</a></li>
+           <li><a href="#">Back-end</a></li>
+           <li><a href="#">Full-Stack</a></li>
+           <li><a href="#">Mobile Dev.</a></li>
+           <li><a href="#">Data Science</a></li>
+           <li><a href="#">JavaScript</a></li>
+           <li><a href="#">Java</a></li>
+           <li><a href="#">Python</a></li>
+           <li><a href="#">C#</a></li>
+           <li><a href="#">C++</a></li>
+           <li><a href="#">All</a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="footer-div p-3">
+       <div class="footer-categories">
+         <h5>Navigation</h5>
+         <ul class="d-flex flex-wrap">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="search.html">Search</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">FAQ</a></li>
+
+         </ul>
+       </div>
+     </div>
+     <div class="footer-div language-container p-3">
+       <div class="languages">
+         
+         <div class="d-flex justify-content-between">
+           <p class="mr-3">Country</p>
+           <a href="#">USA</a>
+         </div>
+         
+         <div class="d-flex justify-content-between">
+           <p class="mr-3">Language</p>
+           <a href="#">English</a>
+         </div>
+         
+         <div class="d-flex justify-content-between">
+           <p class="mr-3">Currency</p>
+           <a href="#">Dolar</a>
+         </div>
+ 
+       </div>
+     </div>
+    </div>
+     <div class="d-flex flex-column align-items-center footer-2nd-div ">
+       <p><span class="copy">Copyright</span> 2020 All Rights Reserved. Rocket Courses</p>
+       <ul class="d-flex">
+         <li><a href="#" class="genericon genericon-facebook"></a></li>
+         <li><a href="#" class="genericon genericon-twitter"></a></li>
+         <li><a href="#" class="genericon genericon-instagram"></a></li>
+         <li><a href="#" class="genericon genericon-tumblr"></a></li>
+         <li><a href="#" class="genericon genericon-linkedin"></a></li>
+       </ul>
+     </div>
+     
+   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://raw.githack.com/kevinfrontend/my_cnds/master/rocket.js"></script>
+  <script>
+    $('.search').focus( function () {
+      {
+      setTimeout(function(){ window.scrollBy(0, 1); }, 350)
+    }
+    });
+  </script>
+</body>
+</html>
