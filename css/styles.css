@@ -70,6 +70,8 @@ header,
 }
 
 .search {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin-left: auto;
   padding: 8px 10px;
   border: none;
@@ -343,6 +345,8 @@ header .login {
   width: 50px;
   height: 100%;
   border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   -webkit-transition: background 200ms linear;
   transition: background 200ms linear;
   margin-right: auto;
@@ -553,6 +557,8 @@ section > h4 {
 
 .hot-ad-heading {
   text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hot-promo {
@@ -803,6 +809,7 @@ footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   margin-right: 10px;
 }
 
@@ -914,6 +921,8 @@ footer ul li {
 @media (min-width: 768px) {
   .form-select {
     margin-left: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   .first-section-left h1 {
@@ -922,6 +931,8 @@ footer ul li {
 
   .first-section .search {
     margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .course-box {
