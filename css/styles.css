@@ -557,6 +557,8 @@ section > h4 {
 
 .hot-ad-heading {
   text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hot-promo {
