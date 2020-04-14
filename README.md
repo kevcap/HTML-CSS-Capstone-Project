@@ -29,7 +29,8 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img src="./img/screenshot.gif" alt="Project Screenshot"></a>
+  <img src="img/projeto.png" alt="projeto">
+  <img src="./img/screenshot.gif" alt="Project Screenshot"></a>
 </p>
 
 ---
